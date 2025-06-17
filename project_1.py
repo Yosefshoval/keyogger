@@ -27,7 +27,6 @@ listener = keyboard.Listener(
     on_release=on_release)
 listener.start()
 
-def ggg():
-    pass
+
 
 
