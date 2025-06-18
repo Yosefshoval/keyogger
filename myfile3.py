@@ -10,3 +10,79 @@ while booli:
 # print(list(keyboard.get_typed_strings(event)))
 
 
+
+
+
+from pynput import keyboard
+from datetime import datetime
+
+# def on_press(key):
+#     try:
+#         print('alphanumeric key {0} pressed'.format(
+#             key.char))
+#     except AttributeError:
+#         print('special key {0} pressed'.format(
+#             key))
+#
+# times = {}
+#
+# while True:
+#     listiner = on_press(keyboard.Listener)
+#     if datetime.now() in times:
+#         times[datetime.now()] += Listener
+#     else:
+#         times[datetime.now()] = listiner
+#
+#
+# print(times)
+
+
+import keyboard
+now = datetime.now()
+y = now.strftime('%d/%m/%y %H:%M')
+
+dicti = {}
+
+def on_key_press(key):
+    global dicti,y
+    if y in dicti:
+        if y == now:
+            try:
+                dicti[y].append(key)
+                print(dicti)
+            except AttributeError:
+                # Handle special keys (e.g., space, enter, shift)
+                dicti[y].append(key)
+                print(dicti)
+        else:
+            dicti[now] = []
+            try:
+                dicti[now].append(key)
+                print(dicti)
+            except AttributeError:
+                # Handle special keys (e.g., space, enter, shift)
+                dicti[now].append(key)
+                print(dicti)
+    else:
+        dicti[y] = []
+        try:
+            dicti[y].append(key)
+            print(dicti)
+        except AttributeError:
+            # Handle special keys (e.g., space, enter, shift)
+            dicti[y].append(key)
+            print(dicti)
+
+# Register the callback function
+# while True:
+#     if  y == x:
+#         keyboard.wait('esc')
+#     else:
+#         dicti[y] = []
+#         keyboard.on_press(on_key_press)
+#         keyboard.wait('esc')
+# Keep the program running to listen for events
+ # Waits until the 'esc' key is pressed to exit
+keyboard.on_press(on_key_press)
+keyboard.wait('esc')
+print(dicti)
