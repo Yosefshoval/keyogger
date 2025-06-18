@@ -1,11 +1,11 @@
-import keyboard
-booli = True
-while booli:
-    event = keyboard.record(until='hhh555')
-    print(event)
-    if "hhh555" in event:
-        break
-# keyboard.play(event)
+# import keyboard
+# booli = True
+# while booli:
+#     event = keyboard.record(until='hhh555')
+#     print(event)
+#     if "hhh555" in event:
+#         break
+# # keyboard.play(event)
 
 # print(list(keyboard.get_typed_strings(event)))
 
@@ -38,39 +38,40 @@ from datetime import datetime
 
 
 import keyboard
-now = datetime.now()
-y = now.strftime('%d/%m/%y %H:%M')
+
+# y = now.strftime('%d/%m/%y %H:%M')
 
 dicti = {}
 
 def on_key_press(key):
+    now = datetime.now().strftime('%d/%m/%y %H:%M')
     global dicti,y
-    if y in dicti:
-        if y == now:
+    if datetime.minute in dicti:
+        if datetime.now() == now:
             try:
-                dicti[y].append(key)
+                dicti[datetime.now()].append(key)
                 print(dicti)
             except AttributeError:
                 # Handle special keys (e.g., space, enter, shift)
-                dicti[y].append(key)
+                dicti[datetime.now()].append(key)
                 print(dicti)
         else:
-            dicti[now] = []
+            dicti[datetime.now()] = []
             try:
-                dicti[now].append(key)
+                dicti[datetime.now()].append(key)
                 print(dicti)
             except AttributeError:
                 # Handle special keys (e.g., space, enter, shift)
-                dicti[now].append(key)
+                dicti[datetime.now()].append(key)
                 print(dicti)
     else:
-        dicti[y] = []
+        dicti[datetime.now()] = []
         try:
-            dicti[y].append(key)
+            dicti[datetime.now()].append(key)
             print(dicti)
         except AttributeError:
             # Handle special keys (e.g., space, enter, shift)
-            dicti[y].append(key)
+            dicti[datetime.now()].append(key)
             print(dicti)
 
 # Register the callback function
