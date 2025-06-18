@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="153175a7-7238-4138-a8c7-c2c4509bf0c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tryyyyyyy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prodect keylogger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myfile3.py" beforeDir="false" afterPath="$PROJECT_DIR$/myfile3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tryyyyyyy.py" beforeDir="false" afterPath="$PROJECT_DIR$/tryyyyyyy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +38,13 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.myfile3.executor": "Run",
+    "Python.prodect keylogger.executor": "Run",
     "Python.project_1.executor": "Run",
     "Python.tryyyyyyy.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "last_opened_file_path": "C:/Git/myTestRepo1/kodcod1"
   }
 }]]></component>

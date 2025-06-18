@@ -7,3 +7,6 @@ def x2(funci):
 y = x2(x1)
 print(y)
 
+dicti = {1:"showhhh"}
+if "show" in dicti[1]:
+    print("yes")
