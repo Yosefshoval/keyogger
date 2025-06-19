@@ -1,4 +1,4 @@
-import keyboard                      #Import a library that records keyboard keystrokes.
+#import keyboard                      #Import a library that records keyboard keystrokes.
 from datetime import datetime            #Import a library that records date and time.
 
 
@@ -32,6 +32,6 @@ def on_key_press(key):                             #A function that receives inp
 
 
 
-
-keyboard.on_press(on_key_press)               #function call.
-keyboard.wait('Ctrl + Shift + .')           #Calling a function that terminates the program.
+if __name__ == "__main__":
+    keyboard.on_press(on_key_press)               #function call.
+    keyboard.wait('Ctrl + Shift + .')           #Calling a function that terminates the program.
