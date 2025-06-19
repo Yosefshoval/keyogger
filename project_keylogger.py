@@ -11,7 +11,6 @@ def on_key_press(key):                             #A function that receives inp
     key = key.lower()
     currentTime = datetime.now().strftime('%d/%m/%y %H:%M')
 
-
     if currentTime not in dicti:
         dicti[currentTime] = ''
 
