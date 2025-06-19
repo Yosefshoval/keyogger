@@ -1,4 +1,4 @@
-#import keyboard                      #Import a library that records keyboard keystrokes.
+import keyboard                      #Import a library that records keyboard keystrokes.
 from datetime import datetime            #Import a library that records date and time.
 
 
@@ -20,17 +20,15 @@ def on_key_press(key):                             #A function that receives inp
 
     if "show" in dicti_for_show["all times"]:
         for k,v in dicti.items():                     #A loop that checks if the sequence of words "show" exists.
-            print()                          #If this sequence exists, then the software will print everything that has been saved so far, and empty the dictionary.
-            print(k)
-            print(v)
-            print()
+            print("****",k,"****")                  #If this sequence exists, then the software will print everything that has been saved so far, and empty the dictionary.
+            print(v,end = "\n")
         dicti = {}
         dicti_for_show = {"all times": ''}
 
 
 
 
-
+#For checking the current file.
 if __name__ == "__main__":
     keyboard.on_press(on_key_press)               #function call.
     keyboard.wait('Ctrl + Shift + .')           #Calling a function that terminates the program.
