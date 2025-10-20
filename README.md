@@ -5,3 +5,4 @@
 4. git push origin "שם הבראנץ"
  
 
+To start the program you need to run first the server and then the agent file, once it done, the program listening all your presses on the keybord. Good Luck!
